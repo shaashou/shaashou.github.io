@@ -1,3 +1,7 @@
-- 校级一等奖学金, 2022.  
+- Robomaster 三等奖 
 
-- Outstanding Graduation Thesis, XXX University, 2023. 
+- Robocup 搬运比赛 一等奖
+
+- 全国大学生智能车竞赛 智能视觉组 二等奖
+
+- 西门子竞赛 二等奖

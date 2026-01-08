@@ -1,20 +1,17 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
+[![XX](https://img.shields.io/badge/shaashou-github-blue?logo=github)](https://github.com/shaashou)
 
-I'm currently pursuing a Master's degree in XX at the Department of XX, XX University, XX.
+I am currently pursuing a PhD at the School of Artificial Intelligence and Robotics at Hunan University.
 
 #### Email  
-<code>XX@XX.XX</code>  
-<code>XX@XX.XX</code>
+<code>1694896439@qq.com</code>  
+<code>yanguorun@hnu.edu.cn</code>
 
 #### Education  
-**XX University**, Master of XX (XX – XX)  
-• GPA: XX/XX  
+**XinJiang University**, Undergraduate of XinJiang University (2021 – 2025)  
+•   
 
-**XX University**, Exchange student <br>  
-• As a XX, represented my college as an outstanding student for a XX exchange program.  
-
-**XX University**, Honours Bachelor of XX (XX – XX)  
-• GPA: XX/XX (top XX%)  
+**HuNan University**, Ph.D of HuNan University (2025-now) <br>  
+• 
 
 #### Research Interests  
-XX, XX, XX, XX.
+3D Gaussian Splatting, Robotics, VLA, Manipulation.

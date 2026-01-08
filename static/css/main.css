@@ -15,6 +15,7 @@
 }
 
 .top-section {
+    height: 600px !important; /* 或更高 */
     position: relative;
     padding: 10rem 0;
     background-position: center;
