@@ -60,10 +60,34 @@ window.addEventListener('DOMContentLoaded', event => {
                 // Auto-play videos after content is loaded
                 const videos = document.querySelectorAll('video[autoplay]');
                 videos.forEach(video => {
-                    video.muted = true; // Ensure muted for autoplay policy
-                    video.play().catch(err => {
-                        console.log('Autoplay prevented:', err);
-                    });
+                    // Ensure required attributes for autoplay
+                    video.muted = true;
+                    video.playsInline = true;
+                    
+                    // Try to play immediately
+                    const playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            console.log('Video autoplay started successfully');
+                        }).catch(err => {
+                            console.log('Autoplay prevented, will retry on user interaction:', err);
+                            
+                            // Fallback: play on any user interaction
+                            const playOnInteraction = () => {
+                                video.play().then(() => {
+                                    console.log('Video started after user interaction');
+                                    document.removeEventListener('click', playOnInteraction);
+                                    document.removeEventListener('scroll', playOnInteraction);
+                                    document.removeEventListener('touchstart', playOnInteraction);
+                                }).catch(e => console.log('Play failed:', e));
+                            };
+                            
+                            document.addEventListener('click', playOnInteraction, { once: true });
+                            document.addEventListener('scroll', playOnInteraction, { once: true });
+                            document.addEventListener('touchstart', playOnInteraction, { once: true });
+                        });
+                    }
                 });
             })
             .catch(error => console.log(error));
