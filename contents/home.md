@@ -15,3 +15,8 @@ I am currently pursuing a PhD at the School of Artificial Intelligence and Robot
 
 #### Research Interests  
 3D Gaussian Splatting, Robotics, VLA, Manipulation.
+
+<video width="100%" style="max-width: 800px; height: 450px; display: block; margin: 20px auto;" controls>
+  <source src="../static/assets/video/test.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
