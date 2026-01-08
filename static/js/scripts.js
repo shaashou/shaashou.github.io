@@ -56,6 +56,15 @@ window.addEventListener('DOMContentLoaded', event => {
             }).then(() => {
                 // MathJax
                 MathJax.typeset();
+                
+                // Auto-play videos after content is loaded
+                const videos = document.querySelectorAll('video[autoplay]');
+                videos.forEach(video => {
+                    video.muted = true; // Ensure muted for autoplay policy
+                    video.play().catch(err => {
+                        console.log('Autoplay prevented:', err);
+                    });
+                });
             })
             .catch(error => console.log(error));
     })
