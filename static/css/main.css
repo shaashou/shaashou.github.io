@@ -55,6 +55,33 @@ section .main-body{
     line-height: 2.4rem;
 }
 
+.experience-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.experience-media figure {
+    margin: 0;
+}
+
+.experience-media img,
+.experience-media video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: #111;
+}
+
+.experience-media figcaption {
+    margin-top: .4rem;
+    color: #555;
+    font-size: .9rem;
+    line-height: 1.4;
+}
+
 
 .bg-gradient-primary-to-secondary-light {
     background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
@@ -109,5 +136,4 @@ section .main-body{
         margin: 0;
     }
 }
-
 
